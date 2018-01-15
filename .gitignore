@@ -19,3 +19,11 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# for mac
+/.DS_Store
+*/.DS_Store
+*DS_Store
+*.swp
+*.swo
+
