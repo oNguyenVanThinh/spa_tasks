@@ -5,11 +5,17 @@ header{
 body{
   margin: 0;
   padding: 0;
+  color: #555;
   font-family: 'Source Sans Pro', sans-serif;
 }
 
 input{
   border: none;
+  outline: none;
+}
+
+input:focus{
+  outline: none;
 }
 
 .container{
@@ -31,8 +37,8 @@ input{
 
 header{
   height: 60px;
-  position: fixed;
   width: 100%;
+  background: #f4f4f4;
 }
 
 header .navbar{
@@ -56,6 +62,7 @@ header .navbar .nav-item{
 }
 
 header .nav-search{
+  color: #555;
   margin: 14px;
   font-size: 20px;
   padding: 0 10px;
@@ -81,14 +88,19 @@ header .nav-search::before{
 .app-container{
   background: #f4f4f4;
   height: 100vh;
+  display: flex;
+  justify-content: space-between;
 }
 
 .app-container .main-content{
   background: white;
+  flex: 1;
+  padding-left: 14px;
 }
 
 .app-container .side-bar{
-  background: red
+  flex-basis: 400px;
+  transition: ease-in-out 0.1s;
 }
 
 footer{
