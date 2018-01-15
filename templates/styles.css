@@ -1,0 +1,99 @@
+header{
+  border: 1px solid #ddd;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+input{
+  border: none;
+}
+
+.container{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icon{
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+.icon-bell{
+  background-image: url('img/icons/bell.svg');
+  background-position: center;
+  background-size: cover;
+}
+
+header{
+  height: 60px;
+  position: fixed;
+  width: 100%;
+}
+
+header .navbar{
+  display: flex;
+  justify-content: space-between;
+}
+
+header .navbar .nav-left, header .navbar .nav-right{
+  display: flex;
+}
+
+header .navbar .nav-left .logo{
+  padding: 20px 14px;
+  font-weight: bold;
+  color: #999;
+}
+
+header .navbar .nav-item{
+  display: block;
+  padding: 14px;
+}
+
+header .nav-search{
+  margin: 14px;
+  font-size: 20px;
+  padding: 0 10px;
+  position: relative;
+}
+
+/*
+header .nav-search::before{
+  content: ' ';
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('img/icons/search.svg');
+  background-size: cover;
+  background-position: center;
+  background: blue;
+  z-index: 99;
+}
+*/
+
+.app-container{
+  background: #f4f4f4;
+  height: 100vh;
+}
+
+.app-container .main-content{
+  background: white;
+}
+
+.app-container .side-bar{
+  background: red
+}
+
+footer{
+  border-top: 1px solid #ddd;
+  text-align: center;
+  padding: 5px 0;
+  width: 100%;
+}
