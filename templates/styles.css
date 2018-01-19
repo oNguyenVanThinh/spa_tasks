@@ -9,12 +9,12 @@ body{
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-input{
+input, textarea{
   border: none;
   outline: none;
 }
 
-input:focus{
+input:focus, textarea:focus{
   outline: none;
 }
 
@@ -36,6 +36,11 @@ a{
   background-size: cover;
 }
 
+.icon.icon-small{
+  width: 10px;
+  height: 10px;
+}
+
 .icon-bell{
   background-image: url('img/icons/bell.svg');
 }
@@ -46,6 +51,18 @@ a{
 
 .icon-close{
   background-image: url('img/icons/close.svg');
+}
+
+.icon-list{
+  background-image: url('img/icons/list.svg');
+}
+
+.icon-message-bubble{
+  background-image: url('img/icons/message_bubble.svg');
+}
+
+.icon-settings{
+  background-image: url('img/icons/settings.svg');
 }
 
 .modal{
@@ -71,11 +88,83 @@ a{
   min-height: 600px;
 }
 
-.modal .modal-close{
+.modal-content .modal-header{
+  font-size: 22px;
+  font-weight: bold;
+  color: #555;
+}
+
+.modal-content .modal-close{
   color: #aaaaaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
+}
+
+.modal-content .modal-container{
+  display: flex;
+  margin-top: 30px;
+}
+
+.modal-main{
+  flex: 1;
+}
+
+.modal-sidebar{
+  flex-basis: 200px;
+}
+
+.infobox{
+  border: 1px solid #ddd;
+  padding: 5px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.infobox-setting{
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+
+.infobox .infobox-title{
+  color: #555;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.infobox .infobox-title .icon{
+  margin-right: 5px;
+}
+
+.infobox.infobox-lg{
+  border: none;
+}
+
+.infobox.infobox-lg .infobox-title{
+  font-size: 16px;
+}
+
+.infobox .infobox-body{
+
+}
+
+.infobox textarea[name="comment"]{
+  border: 1px solid #aaa;
+}
+
+.checklist-item{
+  margin: 10px 0;
+}
+
+.checklist-item input{
+  transform: scale(1.3);
+}
+
+.checklist-item label{
+  font-size: 16px;
 }
 
 header{
@@ -168,6 +257,7 @@ footer{
 
 .board .board-header{
   font-weight: bold;
+  font-size: 18px;
   text-align: center;
   padding: 10px;
   border-bottom: 1px solid #ddd;

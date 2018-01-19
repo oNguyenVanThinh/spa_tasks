@@ -35,4 +35,3 @@ $(window).click(function(e){
     modalTaskShow.css('display', 'none');
   }
 })
-
