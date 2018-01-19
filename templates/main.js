@@ -35,3 +35,13 @@ $(window).click(function(e){
     modalTaskShow.css('display', 'none');
   }
 })
+
+function toggleSelectMenu(idToggle) {
+  let selectMenu = $(idToggle);
+  if(selectMenu.hasClass("show")){
+    selectMenu.removeClass("show");
+  } else{
+    selectMenu.addClass("show");
+  }
+  $(idToggle).children('.selectmenu-search').children().focus();
+}

@@ -144,9 +144,35 @@
           </div>
           <div class="modal-sidebar">
             <div class="infobox">
-              <a class="infobox-setting" href="#">
-                <span class="icon icon-small icon-settings"></span>
-              </a>
+              <div class="selectmenu">
+                <a
+                  class="infobox-setting selectmenu-button"
+                  href="#"
+                  onclick="toggleSelectMenu('#select-task-member')"
+                  >
+                    <span class="icon icon-small icon-settings"></span>
+                </a>
+                <div class="selectmenu-modal" id="select-task-member">
+                  <div class="selectmenu-header">
+                    Chọn thành viên
+                  </div>
+                  <div class="selectmenu-search">
+                    <input type="text" name="" value="" placeholder="Tìm kiếm">
+                  </div>
+                  <div class="selectmenu-list">
+                    <a class="selectmenu-item" href="#">
+                      Thinh Nguyen
+                    </a>
+                    <a class="selectmenu-item" href="#">
+                      Ngo Khai
+                    </a>
+                    <a class="selectmenu-item" href="#">
+                      Huyen Phuong
+                    </a>
+
+                  </div>
+                </div>
+              </div>
               <div class="infobox-title">
                 <span class="infobox-title-text">
                   Thành viên
