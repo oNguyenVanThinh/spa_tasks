@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SPA-TASK</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="navbar">
+          <div class="nav-left">
+            <a class="logo" href="#">SPA-TASKS</a>
+          </div>
+          <div class="nav-right">
+            <input class="nav-search" id="navsearch" type="text" placeholder="Tìm kiếm" name="" value="">
+            <a href="#" class="nav-item" id="notification">
+              <span class="icon icon-bell"></span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="app-container">
+      <div class="main-content">
+        <div class="board">
+          <div class="board-header">
+            TODO
+          </div>
+          <div class="board-body">
+            <div class="task">
+              <div class="task-main">
+                <a class="task-name" href="#">
+                  Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
+                </a>
+              </div>
+              <div class="task-right">
+                <a class="task-assign" href="#">
+                  <img src="img/face.jpeg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="task">
+              <div class="task-main">
+                <a class="task-name" href="#">
+                  Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+                </a>
+              </div>
+              <div class="task-right">
+                <a class="task-assign" href="#">
+                  <img src="img/face.jpeg" alt="">
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <div class="board-footer">
+            <a class="board-button-add" href="#">
+              <span class="icon icon-add"></span>
+            </a>
+          </div>
+        </div>
+        <div class="board">
+          <div class="board-header">
+            DOING
+          </div>
+          <div class="board-body">
+            <div class="task">
+              <div class="task-main">
+                <a class="task-name" href="#">
+                  Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
+                </a>
+              </div>
+              <div class="task-right">
+                <a class="task-assign" href="#">
+                  <img src="img/face.jpeg" alt="">
+                </a>
+              </div>
+            </div>
+
+          </div>
+          <div class="board-footer">
+            <a class="board-button-add" href="#">
+              <span class="icon icon-add"></span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+      <div class="side-bar" id="sidebar">
+      </div>
+    </div>
+
+    <div id="modal-task-show" class="modal">
+      <div class="modal-content">
+        <span class="modal-close icon icon-close"></span>
+        <div class="modal-header">
+          Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.
+        </div>
+        <div class="modal-container">
+          <div class="modal-main">
+            <div class="infobox infobox-lg">
+              <div class="infobox-title">
+                <span class="icon icon-list"></span>
+                <span class="infobox-title-text">
+                  Các công việc
+                </span>
+              </div>
+              <div class="infobox-body">
+                <div class="checklist-item">
+                  <input type="checkbox" checked="checked">
+                  <label>Donec rutrum congue leo eget malesuada</label>
+                </div>
+                <div class="checklist-item">
+                  <input type="checkbox" checked="checked">
+                  <label>Lorem ipsum dolor sit amet, consectetur adipiscing elit</label>
+                </div>
+                <div class="checklist-item">
+                  <input type="checkbox">
+                  <label>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a</label>
+                </div>
+                <div class="checklist-item">
+                  <input type="checkbox">
+                  <label>Pellentesque in ipsum id orci porta dapibus</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="infobox infobox-lg">
+              <div class="infobox-title">
+                <span class="icon icon-message-bubble"></span>
+                <span class="infobox-title-text">
+                  Bình luận
+                </span>
+              </div>
+              <div class="infobox-body">
+                <textarea name="comment" rows="8" cols="60"></textarea>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-sidebar">
+            <div class="infobox">
+              <div class="selectmenu">
+                <a
+                  class="infobox-setting selectmenu-button"
+                  href="#"
+                  onclick="toggleSelectMenu('#select-task-member')"
+                  >
+                    <span class="icon icon-small icon-settings"></span>
+                </a>
+                <div class="selectmenu-modal" id="select-task-member">
+                  <div class="selectmenu-header">
+                    Chọn thành viên
+                  </div>
+                  <div class="selectmenu-search">
+                    <input type="text" name="" value="" placeholder="Tìm kiếm">
+                  </div>
+                  <div class="selectmenu-list">
+                    <a class="selectmenu-item" href="#">
+                      Thinh Nguyen
+                    </a>
+                    <a class="selectmenu-item" href="#">
+                      Ngo Khai
+                    </a>
+                    <a class="selectmenu-item" href="#">
+                      Huyen Phuong
+                    </a>
+
+                  </div>
+                </div>
+              </div>
+              <div class="infobox-title">
+                <span class="infobox-title-text">
+                  Thành viên
+                </span>
+              </div>
+              <div class="infobox-body">
+                Thinh Nguyen
+              </div>
+            </div>
+            <div class="infobox">
+              <a class="infobox-setting" href="#">
+                <span class="icon icon-small icon-settings"></span>
+              </a>
+              <div class="infobox-title">
+                <span class="infobox-title-text">
+                  Nhãn
+                </span>
+              </div>
+              <div class="infobox-body">
+                Technology
+              </div>
+            </div>
+            <div class="infobox">
+              <a class="infobox-setting" href="#">
+                <span class="icon icon-small icon-settings"></span>
+              </a>
+              <div class="infobox-title">
+                <span class="infobox-title-text">
+                  Thời gian
+                </span>
+              </div>
+              <div class="infobox-body">
+                Thứ tư(12/10)
+              </div>
+            </div>
+            <div class="infobox">
+              <div class="infobox-title">
+                <span class="infobox-title-text">
+                  File đính kèm
+                </span>
+              </div>
+              <div class="infobox-body">
+                face.png
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <span>Blog:</span>
+      <a href="https://viblo.asia/s/single-page-application-with-reactjs-rails-api-3vKjRg1MK2R">
+        https://viblo.asia/s/single-page-application-with-reactjs-rails-api-3vKjRg1MK2R
+      </a>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"></script>
+    <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>

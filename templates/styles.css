@@ -1,0 +1,364 @@
+header{
+  border: 1px solid #ddd;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  color: #555;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+input, textarea{
+  border: none;
+  outline: none;
+}
+
+input:focus, textarea:focus{
+  outline: none;
+}
+
+a{
+  text-decoration: none;
+  color: #555;
+}
+
+.container{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icon{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background-position: center;
+  background-size: cover;
+}
+
+.icon.icon-small{
+  width: 15px;
+  height: 15px;
+}
+
+.icon-bell{
+  background-image: url('img/icons/bell.svg');
+}
+
+.icon-add{
+  background-image: url('img/icons/add.svg');
+}
+
+.icon-close{
+  background-image: url('img/icons/close.svg');
+}
+
+.icon-list{
+  background-image: url('img/icons/list.svg');
+}
+
+.icon-message-bubble{
+  background-image: url('img/icons/message_bubble.svg');
+}
+
+.icon-settings{
+  background-image: url('img/icons/settings.svg');
+}
+
+.selectmenu{
+
+}
+
+.selectmenu-button{
+}
+
+.selectmenu-modal{
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top: 25px;
+  right: 0;
+  width: 200px;
+  background: #f6f8fa;
+  border: 1px solid #e1e4e8;
+  box-shadow: 0 3px 12px rgba(27,31,35,0.15);
+}
+
+.selectmenu-modal.show{
+  display: block;
+}
+
+.selectmenu-header{
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.selectmenu-search{
+  background: #f6f8fa;
+}
+
+.selectmenu-search input{
+  width: calc(100% - 22px);
+  font-size: 16px;
+  padding: 5px;
+  color: #555;
+  margin: 5px;
+}
+
+.selectmenu-search input:focus{
+  outline-color: rgb(77, 144, 254);
+  outline-offset: -2px;
+  outline-style: auto;
+  outline-width: 5px;
+}
+
+.selectmenu-list{
+  border-top: 1px solid #dfdfdf;
+  background: white;
+}
+
+.selectmenu-list .selectmenu-item{
+  padding: 5px 10px;
+  display: block;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal .modal-content{
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 800px;
+  min-height: 600px;
+}
+
+.modal-content .modal-header{
+  font-size: 22px;
+  font-weight: bold;
+  color: #555;
+}
+
+.modal-content .modal-close{
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modal-content .modal-container{
+  display: flex;
+  margin-top: 30px;
+}
+
+.modal-main{
+  flex: 1;
+}
+
+.modal-sidebar{
+  flex-basis: 200px;
+}
+
+.infobox{
+  border: 1px solid #ddd;
+  padding: 5px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.infobox-setting{
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+
+.infobox .infobox-title{
+  color: #555;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: flex;
+}
+
+.infobox .infobox-title .icon{
+  margin-right: 5px;
+}
+
+.infobox.infobox-lg{
+  border: none;
+}
+
+.infobox.infobox-lg .infobox-title{
+  font-size: 16px;
+}
+
+.infobox .infobox-body{
+
+}
+
+.infobox textarea[name="comment"]{
+  border: 1px solid #aaa;
+}
+
+.checklist-item{
+  margin: 10px 0;
+}
+
+.checklist-item input{
+  transform: scale(1.3);
+}
+
+.checklist-item label{
+  font-size: 16px;
+}
+
+header{
+  height: 60px;
+  width: 100%;
+  background: #f4f4f4;
+}
+
+header .navbar{
+  display: flex;
+  justify-content: space-between;
+}
+
+header .navbar .nav-left, header .navbar .nav-right{
+  display: flex;
+  flex-basis: 400px;
+}
+
+header .navbar .nav-left .logo{
+  padding: 20px 14px;
+  font-weight: bold;
+  color: #999;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+header .navbar .nav-item{
+  display: block;
+  padding: 14px;
+}
+
+header .nav-search{
+  color: #555;
+  margin: 14px 0;
+  font-size: 20px;
+  padding: 0 10px;
+  position: relative;
+}
+
+/*
+header .nav-search::before{
+  content: ' ';
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('img/icons/search.svg');
+  background-size: cover;
+  background-position: center;
+  background: blue;
+  z-index: 99;
+}
+*/
+
+.app-container{
+  background: #f4f4f4;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.app-container .main-content{
+  background: #f4f4f4;
+  flex: 1;
+  padding-left: 14px;
+  display: flex;
+}
+
+.app-container .side-bar{
+  flex-basis: 0px;
+  transition: ease-in-out 0.1s;
+  background: white;
+}
+
+footer{
+  border-top: 1px solid #ddd;
+  text-align: center;
+  padding: 5px 0;
+  width: 100%;
+}
+
+.board{
+  background: white;
+  flex-basis: 350px;
+  margin-top: 10px;
+  border-radius: 3px;
+  margin-right: 15px;
+}
+
+.board .board-header{
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.board .board-body{
+  padding: 0 10px;
+}
+
+.board .board-footer{
+  padding: 10px;
+  display: flex;
+}
+
+.board .board-footer .board-button-add{
+  display: block;
+  margin: auto;
+}
+
+.task{
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ddd;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+.task .task-main{
+  flex: 1;
+}
+
+.task .task-main .task-name{
+  font-size: 16px;
+}
+
+.task .task-right .task-assign{
+
+}
+
+.task .task-assign img{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
